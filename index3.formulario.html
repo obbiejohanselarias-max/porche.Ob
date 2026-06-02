@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Porsche | Contáctanos</title>
+  <link rel="stylesheet" href="index3.styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    /* Fondo con imagen para esta página */
+    .page-contacto {
+      background-image: url('Fondo\ formulario\ porsche.jpeg'),
+        linear-gradient(135deg, rgba(2, 8, 16, 0.146) 0%, rgba(5, 20, 40, 0.164) 100%);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+<body class="page-contacto">
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon"></span>
+      <span class="logo-text"></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index3.html" class="nav-link">Home</a></li>
+      <li class="nav-dropdown">
+        <a href="index3.nosotros.html" class="nav-link">Nosotros</a>
+        <div class="dropdown-menu">
+          <a href="nosotros.html#mision">Misión</a>
+          <a href="nosotros.html#vision">Visión</a>
+          <a href="nosotros.html#valores">Valores</a>
+        </div>
+      </li>
+      <li><a href="index3.coleccion.html" class="nav-link">Colecciones</a></li>
+      <li><a href="index3.formulario.html" class="nav-link active">Contáctanos</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="index3.formulario.html" class="nav-cart-btn">
+        <i class="fas fa-shopping-bag"></i>
+        <span id="cartCount">0</span>
+      </a>
+      <button class="porsche" id="porsche" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== SECCIÓN PRINCIPAL ===== -->
+  <section class="contact-section">
+
+    <!-- LADO IZQUIERDO: Info + Carrito -->
+    <div class="contact-info">
+      <h2 class="algerian">Hablemos de<br><span>Tu Porsche</span></h2>
+      <div class="divider"></div>
+      <p>
+        Nuestro equipo de asesores especializados en lujo automotriz está listo
+        para guiarte en la experiencia de adquirir el automóvil de tus sueños.
+        Cada cliente Porsche recibe atención personalizada y exclusiva.
+      </p>
+
+      <div class="contact-detail">
+        <div class="icon"><i class="fas fa-phone"></i></div>
+        <div>
+          <p>Línea Directa</p>
+          <p>+1 (809) 771-1732</p>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <div class="icon"><i class="fas fa-envelope"></i></div>
+        <div>
+          <p>Correo Electrónico</p>
+          <p>65175555@itfam.edu.do</p>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <div class="icon"><i class="fas fa-location-dot"></i></div>
+        <div>
+          <p>Concesionario</p>
+          <p>A. Venezuela. 1, Family ITFAM Santo Domingo</p>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <div class="icon"><i class="fas fa-clock"></i></div>
+        <div>
+          <p>Horario de Atención</p>
+          <p>Lun–Vie 9:00am–7:00pm · Sáb 10:00am–4:00pm</p>
+        </div>
+      </div>
+
+      <!-- CARRITO DE COMPRAS -->
+      <div class="cart-section">
+        <h4><i class="fas fa-bag-shopping"></i> Tu Carrito de Selección</h4>
+        <p id="cartEmpty" class="cart-empty">Aún no has seleccionado ningún modelo.<br>
+          <a href="index3.coleccion.html" style="color:var(--color-teal)">Explorar Colecciones →</a>
+        </p>
+        <ul class="cart-items-list" id="cartItemsList"></ul>
+        <div class="cart-total" id="cartTotalRow" style="display:none">
+          <span>Total estimado:</span>
+          <span id="cartTotal">—</span>
+        </div>
+      </div>
+
+      <!-- Redes sociales -->
+      <div style="margin-top:2rem;">
+        <p style="font-size:.78rem;letter-spacing:.15em;color:var(--color-teal);text-transform:uppercase;margin-bottom:1rem;">
+          Síguenos
+        </p>
+        <div class="footer-social">
+          <a href="https://wa.me/18091234567" target="_blank" class="social-icon whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://instagram.com/porsche" target="_blank" class="social-icon instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://tiktok.com/@porsche" target="_blank" class="social-icon tiktok" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://facebook.com/porsche" target="_blank" class="social-icon facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://youtube.com/porsche" target="_blank" class="social-icon youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- LADO DERECHO: Formulario -->
+    <div class="contact-form-wrapper">
+      <div class="contact-form-box">
+        <h3 class="algerian">Solicitar Información</h3>
+
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="ctName">Nombre *</label>
+              <input type="text" id="ctName" placeholder="Tu nombre" required autocomplete="given-name"/>
+            </div>
+            <div class="form-group">
+              <label for="ctLastname">Apellido *</label>
+              <input type="text" id="ctLastname" placeholder="Tu apellido" required autocomplete="family-name"/>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="ctEmail">Correo electrónico *</label>
+            <input type="email" id="ctEmail" placeholder="correo@ejemplo.com" required autocomplete="email"/>
+          </div>
+
+          <div class="form-group">
+            <label for="ctPhone">Teléfono</label>
+            <input type="tel" id="ctPhone" placeholder="+1 (809) 000-0000" autocomplete="tel"/>
+          </div>
+
+          <div class="form-group">
+            <label for="ctModel">Modelo de interés</label>
+            <select id="ctModel">
+              <option value="">— Selecciona un modelo —</option>
+              <option>Porsche 911 Carrera S (2024)</option>
+              <option>Porsche Taycan Turbo S (2024)</option>
+              <option>Porsche Cayenne Turbo GT (2024)</option>
+              <option>Porsche Panamera 4S E-Hybrid (2024)</option>
+              <option>Porsche 718 Cayman GT4 RS</option>
+              <option>Porsche Macan Turbo EV (2024)</option>
+              <option>Porsche 959 (1989) — Colección</option>
+              <option>Porsche 911 Original (1963) — Clásico</option>
+              <option>Otro modelo</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="ctMessage">Mensaje *</label>
+            <textarea
+              id="ctMessage"
+              placeholder="Cuéntanos sobre tu interés, presupuesto aproximado, color preferido o cualquier consulta..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-group" style="display:flex;align-items:flex-start;gap:.8rem;">
+            <input type="checkbox" id="ctTerms" required style="width:auto;margin-top:3px;accent-color:var(--color-teal)"/>
+            <label for="ctTerms" style="font-size:.82rem;color:var(--color-silver);cursor:pointer;text-transform:none;letter-spacing:0;">
+              Acepto los <a href="#" style="color:var(--color-teal)">términos y condiciones</a>
+              y la política de privacidad de Porsche República Dominicana.
+            </label>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;font-size:.9rem;">
+            <i class="fas fa-paper-plane"></i> Enviar Solicitud
+          </button>
+        </form>
+
+        <!-- Mensaje de éxito -->
+        <div class="form-success" id="formSuccess">
+          <div class="checkmark"><i class="fas fa-circle-check"></i></div>
+          <h4 class="algerian">¡Solicitud Enviada!</h4>
+          <p>
+            Gracias por contactar a Porsche República Dominicana.<br>
+            Un asesor especializado se comunicará contigo en menos de 24 horas.
+          </p>
+          <a href="index3.html" class="btn-ghost" style="margin-top:1.5rem;display:inline-flex;">
+            Volver al Inicio
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">PORSCHE</span>
+        <p>Zuffenhausen, Stuttgart, Alemania.<br>Donde nació la leyenda del automóvil.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index3.html">Home</a>
+        <a href="index3.nosotros.html">Nosotros</a>
+        <a href="index3.coleccion.html">Colecciones</a>
+        <a href="index3.formulario.html">Contacto</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://wa.me/18097711732" target="_blank" class="social-icon whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://instagram.com/porsche" target="_blank" class="social-icon instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://vt.tiktok.com/ZSxe4G5UW/" target="_blank" class="social-icon tiktok" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.youtube.com/watch?v=DZAdVY9kKbc" target="_blank" class="social-icon youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.porsche.com/latin-america-es/_dominican-republic_/" target="_blank" class="social-icon enger" aria-label="enger"><i class="fab fa-enger"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Porsche AG. Todos los derechos reservados. | Sitio desarrollado con pasión por la velocidad su servidor obbie.</p>
+    </div>
+  </footer>
+
+  <script src="index3.js"></script>
+  <script>
+    // Mostrar/ocultar row del total según items
+    document.addEventListener('DOMContentLoaded', () => {
+      const totalRow = document.getElementById('cartTotalRow');
+      if (totalRow) {
+        const items = Cart.getItems();
+        totalRow.style.display = items.length ? 'flex' : 'none';
+      }
+    });
+  </script>
+</body>
+</html>

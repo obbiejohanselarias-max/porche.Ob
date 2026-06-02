@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Porsche | Colecciones</title>
+  <link rel="stylesheet" href="index3.styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="page-productos">
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon"></span>
+      <span class="logo-text"></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index3.html" class="nav-link">Home</a></li>
+      <li class="nav-dropdown">
+        <a href="index3.nosotros.html" class="nav-link">Nosotros</a>
+        <div class="dropdown-menu">
+          <a href="nosotros.html#mision">Misión</a>
+          <a href="nosotros.html#vision">Visión</a>
+          <a href="nosotros.html#valores">Valores</a>
+        </div>
+      </li>
+      <li><a href="index3.coleccion.html" class="nav-link active">Colecciones</a></li>
+      <li><a href="index3.formulario.html" class="nav-link">Contáctanos</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="index3.formulario.html" class="nav-cart-btn">
+        <i class="fas fa-shopping-bag"></i>
+        <span id="cartCount">0</span>
+      </a>
+      <button class="porsche" id="porsche" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== BARRA DE BÚSQUEDA + TÍTULO ===== -->
+  <div class="search-bar-section">
+    <h2 class="algerian">Colecciones <span>Porsche</span></h2>
+    <div class="search-box">
+      <input
+        type="search"
+        id="productSearch"
+        placeholder="Buscar modelo... ej: 911, Taycan, Cayenne"
+        autocomplete="off"
+      />
+      <i class="fas fa-search search-icon"></i>
+    </div>
+  </div>
+
+  <!-- ===== CARRUSEL PRINCIPAL ===== -->
+  <div class="products-carusel">
+    <div class="carusel-track-wrapper">
+      <div class="carusel-track" id="caruselTrack">
+
+        <div class="carusel-slide">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200" alt="911 Carrera" loading="lazy"/>
+          <div class="carusel-slide-content">
+            <h3 class="algerian">911 Carrera S</h3>
+            <p>El deportivo más icónico del mundo — 450 CV</p>
+          </div>
+        </div>
+
+        <div class="carusel-slide">
+          <img src="Porsche 911 GT1.avif" alt="Taycan" loading="lazy"/>
+          <div class="carusel-slide-content">
+            <h3 class="algerian">Porsche 911 GT1</h3>
+            <p>La revolución eléctrica — 761 CV silenciosos</p>
+          </div>
+        </div>
+
+        <div class="carusel-slide">
+          <img src="Porsche Taycan.webp" alt="Cayenne" loading="lazy"/>
+          <div class="carusel-slide-content">
+            <h3 class="algerian">Porsche Taycan</h3>
+            <p>El SUV que redefine el poder — 640 CV AWD</p>
+          </div>
+        </div>
+
+        <div class="carusel-slide">
+          <img src="Exclusive Manufaktur Porsche.avif" alt="Panamera" loading="lazy"/>
+          <div class="carusel-slide-content">
+            <h3 class="algerian">Exclusive Manufaktur | Porsche</h3>
+            <p>Lujo y dinamismo en cuatro puertas — 571 CV</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="carusel-controls">
+      <button class="slider-btn prev" id="carouselPrev" aria-label="Anterior">&#8249;</button>
+      <div style="display:flex;gap:.5rem;">
+        <button class="slider-dot carusel-dot active" data-index="0"></button>
+        <button class="slider-dot carusel-dot" data-index="1"></button>
+        <button class="slider-dot carousel-dot" data-index="2"></button>
+        <button class="slider-dot carousel-dot" data-index="3"></button>
+      </div>
+      <button class="slider-btn next" id="caruselNext" aria-label="Siguiente">&#8250;</button>
+    </div>
+  </div>
+
+  <!-- ===== GRID DE PRODUCTOS ===== -->
+  <section class="products-grid-section">
+    <div class="products-grid" id="productsGrid">
+
+      <!-- PRODUCTO 1 — Clásico antiguo -->
+      <div class="product-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600" alt="Porsche 911 1963" loading="lazy"/>
+        </div>
+        <div class="card-body">
+          <p class="card-year">CLÁSICO · 1963</p>
+          <h3>Porsche 911 Original</h3>
+          <p class="card-specs">130 CV · Boxer 2.0 · Transmisión manual · Edición histórica</p>
+          <div class="card-stars" data-rating="5.0"></div>
+          <div class="card-footer">
+            <span class="card-price">RD$ 35,000,000</span>
+            <button class="btn-cart" data-name="Porsche 911 Original 1963" data-price="RD$ 35,000,000">
+              <i class="fas fa-bag-shopping"></i> Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 2 -->
+      <div class="product-card">
+        <div class="card-img">
+          <img src="Porsche 911 GT3.jpg" alt="Taycan Turbo S" loading="lazy"/>
+        </div>
+        <div class="card-body">
+          <p class="card-year">2022–2026 (serie 992).</p>
+          <h3>Porsche 911 GT3</h3>
+          <p class="card-specs">Manual de 6 velocidades,Automática PDK de 7 velocidades,311 km/h – 313 km/h</p>
+          <div class="card-stars" data-rating="4.9"></div>
+          <div class="card-footer">
+            <span class="card-price">RD$14,200,000</span>
+            <button class="btn-cart" data-name="Porsche Taycan Turbo S 2024" data-price="RD$ 28,700,000">
+              <i class="fas fa-bag-shopping"></i> Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 3 -->
+      <div class="product-card">
+        <div class="card-img">
+          <img src="Porsche 911 Sport Classic.jpg" alt="Cayenne Turbo GT" loading="lazy"/>
+        </div>
+        <div class="card-body">
+          <p class="card-year">2022</p>
+          <h3>Porsche 911 Sport Classic</h3>
+          <p class="card-specs">Motor 6 cilindros bóxer 3.7 litros twin-turbo.Aproximadamente 315 km/h (196 mph).</p>
+          <div class="card-stars" data-rating="4.8"></div>
+          <div class="card-footer">
+            <span class="card-price">RD$16,500,000</span>
+            <button class="btn-cart" data-name="Porsche Cayenne Turbo GT 2024" data-price="RD$ 22,900,000">
+              <i class="fas fa-bag-shopping"></i> Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 4 -->
+      <div class="product-card">
+        <div class="card-img" style="background:linear-gradient(135deg,#030912,#0d2a50);font-size:5rem;display:flex;align-items:center;justify-content:center;">
+          <img src="Porsche 935.webp" alt="Cayenne Turbo GT" loading="lazy"/>
+        </div>
+        <div class="card-body">
+          <p class="card-year">DEPORTIVO · 2024</p>
+          <h3>Porsche 935 </h3>
+          <p class="card-specs">450 CV · Boxer 3.0T · 0-100 en 3.5s · PDK 8 vel.</p>
+          <div class="card-stars" data-rating="5.0"></div>
+          <div class="card-footer">
+            <span class="card-price">RD$ 18,500,000</span>
+            <button class="btn-cart" data-name="Porsche 911 Carrera S 2024" data-price="RD$ 18,500,000">
+              <i class="fas fa-bag-shopping"></i> Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 5 -->
+      <div class="product-card">
+        <div class="card-img" style="background:linear-gradient(135deg,#030912,#092040);font-size:5rem;display:flex;align-items:center;justify-content:center;">
+          <img src="Porsche 928.jpg" alt="Cayenne Turbo GT" loading="lazy"/>
+        </div>
+        <div class="card-body">
+          <p class="card-year">GT RACING · 2024</p>
+          <h3>Porsche 928 </h3>
+          <p class="card-specs">500 CV · Motor PDK · Downforce activo · Pista certificada</p>
+          <div class="card-stars" data-rating="4.9"></div>
+          <div class="card-footer">
+            <span class="card-price">RD$ 19,200,000</span>
+            <button class="btn-cart" data-name="Porsche 718 Cayman GT4 RS" data-price="RD$ 19,200,000">
+              <i class="fas fa-bag-shopping"></i> Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 6 -->
+      <div class="product-card">
+        <div class="card-img">
+          <img src="Porsche 911 GT1.avif" alt="Cayenne Turbo GT" loading="lazy"/>
+        </div>
+        <div class="card-body">
+          <p class="card-year">HÍBRIDO · 2024</p>
+          <h3>Porsche 911 GT1</h3>
+          <p class="card-specs">571 CV · Híbrido Plug-in · 4 puertas · Comfort Premium</p>
+          <div class="card-stars" data-rating="4.7"></div>
+          <div class="card-footer">
+            <span class="card-price">RD$ 25,100,000</span>
+            <button class="btn-cart" data-name="Porsche Panamera 4S E-Hybrid" data-price="RD$ 25,100,000">
+              <i class="fas fa-bag-shopping"></i> Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 7 — Clásico histórico -->
+      <div class="product-card">
+        <div class="card-img" style="background:linear-gradient(135deg,#0a1628,#0d3b6e,#00b4d8);font-size:5rem;display:flex;align-items:center;justify-content:center;">
+          <img src="Porsche Taycan.webp" alt="Cayenne Turbo GT" loading="lazy"/>
+        </div>
+        <div class="card-body">
+          <p class="card-year">LEYENDA · 1989</p>
+          <h3>Porsche Taycan</h3>
+          <p class="card-specs">450 CV · AWD · Motor biturbo · El superauto que cambió la historia</p>
+          <div class="card-stars" data-rating="5.0"></div>
+          <div class="card-footer">
+            <span class="card-price">RD$ 90,000,000</span>
+            <button class="btn-cart" data-name="Porsche 959 1989" data-price="RD$ 90,000,000">
+              <i class="fas fa-bag-shopping"></i> Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 8 -->
+      <div class="product-card">
+        <div class="card-img" style="background:linear-gradient(135deg,#02080f,#0a2540,#48cae4);font-size:5rem;display:flex;align-items:center;justify-content:center;">
+          <img src="Exclusive Manufaktur Porsche.avif" alt="Panamera 4S" loading="lazy"/>
+        </div>
+        <div class="card-body">
+          <p class="card-year">CROSSOVER · 2024</p>
+          <h3>Exclusive Manufaktur | Porsche</h3>
+          <p class="card-specs">639 CV · 100% Eléctrico · 0-100 en 3.3s · Autonomía 516 km</p>
+          <div class="card-stars" data-rating="4.8"></div>
+          <div class="card-footer">
+            <span class="card-price">RD$ 16,800,000</span>
+            <button class="btn-cart" data-name="Porsche Macan Turbo EV 2024" data-price="RD$ 16,800,000">
+              <i class="fas fa-bag-shopping"></i> Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== MODAL DE REGISTRO ===== -->
+  <div class="modal-overlay" id="authModal">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">✕</button>
+      <h3 class="algerian">Crear Cuenta</h3>
+      <p>Para agregar modelos a tu carrito, crea una cuenta Porsche.</p>
+      <form id="registerForm" novalidate>
+        <div class="form-group">
+          <label for="regName">Nombre completo *</label>
+          <input type="text" id="regName" placeholder="Tu nombre" required autocomplete="name"/>
+        </div>
+        <div class="form-group">
+          <label for="regEmail">Correo electrónico *</label>
+          <input type="email" id="regEmail" placeholder="correo@ejemplo.com" required autocomplete="email"/>
+        </div>
+        <div class="form-group">
+          <label for="regPhone">Teléfono</label>
+          <input type="tel" id="regPhone" placeholder="+1 (809) 000-0000" autocomplete="tel"/>
+        </div>
+        <button type="submit" class="btn-primary" style="width:100%;justify-content:center;margin-top:.5rem;">
+          Crear cuenta y continuar
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">PORSCHE</span>
+        <p>Zuffenhausen, Stuttgart, Alemania.<br>Donde nació la leyenda del automóvil.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index3.html">Inicio</a>
+        <a href="index3.nosotros.html">Nosotros</a>
+        <a href="index3.coleccion.html">Colecciones</a>
+        <a href="index3.formulario.html">Contacto</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://wa.me/18097711732" target="_blank" class="social-icon whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/porsche?igsh=MTF4YmR3YmMxcTVpYQ%3D%3D&utm_source=qr" target="_blank" class="social-icon instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://vt.tiktok.com/ZSxe4G5UW/" target="_blank" class="social-icon tiktok" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.youtube.com/watch?v=DZAdVY9kKbc" target="_blank" class="social-icon youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.porsche.com/latin-america-es/_dominican-republic_/" target="_blank" class="social-icon enger" aria-label="enger"><i class="fab fa-enger"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Porsche AG. Todos los derechos reservados. | Sitio desarrollado con pasión por la velocidad.</p>
+    </div>
+  </footer>
+
+  <script src="index3.js"></script>
+  <!-- Script inline para inicializar botones de carrito con data attributes -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Sobrescribir comportamiento del carrito para leer data attributes
+      document.querySelectorAll('.btn-cart').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const name  = btn.dataset.name;
+          const price = btn.dataset.price;
+          const user  = sessionStorage.getItem('porsche_user');
+          if (!user) {
+            openModal('register', { name, price });
+          } else {
+            Cart.addItem({ name, price });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
